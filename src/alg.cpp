@@ -21,12 +21,12 @@ uint64_t fact(uint16_t n) {
 }
 
 double calcItem(double x, uint16_t n) {
-  return (pown(x,n) / fact(n));
+  return (pown(x, n) / fact(n));
 }
 
 double expn(double x, uint16_t count) {
   double exponent = 0;
-  for (int i = 0; i < count;i++) {
+  for (int i = 0; i < count; i++) {
     exponent += calcItem(x, i);
   }
   return exponent;
